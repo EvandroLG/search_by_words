@@ -1,5 +1,5 @@
 #search_by_words
-This script makes a search in a text by words and return the phrases found with those words.
+This script makes a search in a text by words and return the sentences that were found.
 
 ## How does it work?
 Follow an example:
