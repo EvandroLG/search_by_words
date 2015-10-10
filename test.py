@@ -14,16 +14,16 @@ class TestSearchWords(unittest.TestCase):
 
     def test_should_return_the_sentence_where_it_contains_the_word(self):
         result = search_by_words(self.text, 'HD')
-        expected = ['In that alternate universe, unlike in our own, Capacitance Electronic Discs (CEDs) survived instead of being consigned to the same media-format graveyard as Betamax and HD']
+        expected = ['In that alternate universe, unlike in our own, Capacitance Electronic Discs (CEDs) survived instead of being consigned to the same media-format graveyard as Betamax and HD DVD']
 
         self.assertEqual(len(result), 1)
         self.assertEqual(result, expected)
 
     def test_should_return_the_sentences_with_word_in_plural(self):
         result = search_by_words(self.text, 'CED')
-        expected = ['In that alternate universe, unlike in our own, Capacitance Electronic Discs (CEDs) survived instead of being consigned to the same media-format graveyard as Betamax and HD', 'While CED players were not released to consumers until 1981, the development of the system dates back to the']
+        expected = ['In that alternate universe, unlike in our own, Capacitance Electronic Discs (CEDs) survived instead of being consigned to the same media-format graveyard as Betamax and HD DVD', 'Few people even remember that such a medium as vinyl movies existed, but for a brief, doomed period in the early 1980s, home video was available on CEDs', 'While CED players were not released to consumers until 1981, the development of the system dates back to the 1960s']
 
-        self.assertEqual(len(result), 2)
+        self.assertEqual(len(result), 3)
         self.assertEqual(result, expected)
 
 if __name__ == '__main__':

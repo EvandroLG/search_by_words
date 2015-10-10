@@ -1,7 +1,14 @@
+# -*- coding: utf-8 -*-
+
+# search_by_words
+# author: Evandro Leopoldino Gonçalves <evandrolgoncalves@gmail.com>
+# https://github.com/evandrolg
+# License: MIT
+
 import re
 
 def search_by_words(text, *keywords):
-    sentences = re.split('\w+\.[\s|\n]', text)
+    sentences = re.split('\.[\s|\n]', text)
     result = []
 
     for sentence in sentences:
